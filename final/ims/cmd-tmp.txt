@@ -1,0 +1,71 @@
+### Train
+
+CP = $libdir/liblinear-1.33-with-deps.jar:$libdir/jwnl.jar:$libdir/commons-logging.jar:$libdir/jdom.jar:$libdir/trove.jar:$libdir/maxent-2.4.0.jar:$libdir/opennlp-tools-1.3.0.jar:$bdir/ims.jar
+
+java -mx1900m -cp $CP sg.edu.nus.comp.nlp.ims.implement.CTrainModel -prop .\lib\prop.xml -ptm .\lib\tag.bin.gz -tagdict .\lib\tagdict.txt -ssm .\lib\EnglishSD.bin.gz $1 $2 $3 -f sg.edu.nus.comp.nlp.ims.feature.CFeatureExtractorCombination -s2 $s2 -c2 $c2 #-type directory
+
+bdir=.
+
+libdir=.\lib
+
+.\lib\liblinear-1.33-with-deps.jar;.\lib\jwnl.jar;.\lib\commons-logging.jar;.\lib\jdom.jar;.\lib\trove.jar;.\lib\maxent-2.4.0.jar;.\lib\opennlp-tools-1.3.0.jar;.\ims.jar
+
+$1 = train.xml
+	.\corpora\english-lex-sample\train\eng-lex-sample.training.xml
+$2 = train.key
+	.\corpora\english-lex-sample\train\eng-lex-sample.training.key
+$3 = outputDir
+	.\corpora\english-lex-sample\train\model\
+
+java -mx1000m -cp ".\lib\liblinear-1.33-with-deps.jar;.\lib\jwnl.jar;.\lib\commons-logging.jar;.\lib\jdom.jar;.\lib\trove.jar;.\lib\maxent-2.4.0.jar;.\lib\opennlp-tools-1.3.0.jar;.\ims.jar" sg.edu.nus.comp.nlp.ims.implement.CTrainModel -prop .\lib\prop.xml -ptm .\lib\tag.bin.gz -tagdict .\lib\tagdict.txt -ssm .\lib\EnglishSD.bin.gz .\corpora\english-lex-sample\train\eng-lex-sample.training.xml .\corpora\english-lex-sample\train\eng-lex-sample.training.key .\corpora\english-lex-sample\train\model\ -f sg.edu.nus.comp.nlp.ims.feature.CFeatureExtractorCombination -s2 0 -c2 0
+
+train_one .\corpora\english-lex-sample\train\eng-lex-sample.training.xml .\corpora\english-lex-sample\train\eng-lex-sample.training.key .\train_model\
+
+### Test Lexical Sample
+
+CP=$libdir/liblinear-1.33-with-deps.jar:$libdir/jwnl.jar:$libdir/commons-logging.jar:$libdir/jdom.jar:$libdir/trove.jar:$libdir/maxent-2.4.0.jar:$libdir/opennlp-tools-1.3.0.jar:$bdir/ims.jar
+
+java -mx1900m -cp $CP sg.edu.nus.comp.nlp.ims.implement.CTester -ptm $libdir/tag.bin.gz -tagdict $libdir/tagdict.txt -ssm $libdir/EnglishSD.bin.gz -prop $libdir/prop.xml -r sg.edu.nus.comp.nlp.ims.io.CResultWriter $testfile $modeldir $modeldir $savedir -f sg.edu.nus.comp.nlp.ims.feature.CFeatureExtractorCombination #-type directory
+
+modeldir=$1
+	.\corpora\english-lex-sample\train\model\
+testfile=$2
+	.\corpora\english-lex-sample\test\eng-lex-samp.evaluation.xml
+savedir=$3
+	.\corpora\english-lex-sample\test\result\
+
+java -mx1000m -cp ".\lib\liblinear-1.33-with-deps.jar;.\lib\jwnl.jar;.\lib\commons-logging.jar;.\lib\jdom.jar;.\lib\trove.jar;.\lib\maxent-2.4.0.jar;.\lib\opennlp-tools-1.3.0.jar;.\ims.jar" sg.edu.nus.comp.nlp.ims.implement.CTester -ptm .\lib\tag.bin.gz -tagdict .\lib\tagdict.txt -ssm .\lib\EnglishSD.bin.gz -prop .\lib\prop.xml -r sg.edu.nus.comp.nlp.ims.io.CResultWriter .\corpora\english-lex-sample\test\eng-lex-samp.evaluation.xml .\corpora\english-lex-sample\train\model\ .\corpora\english-lex-sample\train\model\ .\corpora\english-lex-sample\test\result\ -f sg.edu.nus.comp.nlp.ims.feature.CFeatureExtractorCombination
+
+test_one .\train_model\ .\corpora\english-lex-sample\test\eng-lex-samp.evaluation.xml .\test_result\
+
+### Scorer
+
+$0 answerfile keyfile
+
+answerfile
+	.\corpora\english-lex-sample\test\test.answer
+keyfile
+	.\answers+misc\tasks\english-lex-sample\key
+
+java -mx1900m -cp $CLASSPATH sg.edu.nus.comp.nlp.ims.util.CScorer $*
+
+java -mx1000m -cp ".\lib\liblinear-1.33-with-deps.jar;.\lib\jwnl.jar;.\lib\commons-logging.jar;.\lib\jdom.jar;.\lib\trove.jar;.\lib\maxent-2.4.0.jar;.\lib\opennlp-tools-1.3.0.jar;.\ims.jar" sg.edu.nus.comp.nlp.ims.util.CScorer .\corpora\english-lex-sample\test\test.answer .\answers+misc\tasks\english-lex-sample\key
+
+scorer test.answer .\answers+misc\tasks\english-lex-sample\key
+
+
+### Test All-word Coarse
+
+modelDir=$1
+	.\model\
+testFile=$2
+	.\corpora\english-all-words\test\eng-all-words.test.xml
+savePath=$3
+	.\corpora\english-all-words\test\result\
+senseIndex=$4
+	.\lib\dict\index.sense
+
+java -mx2500m -cp $CLASSPATH sg.edu.nus.comp.nlp.ims.implement.CTester -ptm $ldir/tag.bin.gz -tagdict $ldir/tagdict.txt -ssm $ldir/EnglishSD.bin.gz -prop $ldir/prop.xml -c sg.edu.nus.comp.nlp.ims.corpus.CAllWordsCoarseTaskCorpus -r sg.edu.nus.comp.nlp.ims.io.CAllWordsResultWriter -is $senseIndex $testFile $modelDir $modelDir $savePath -e sg.edu.nus.comp.nlp.ims.classifiers.CLibLinearEvaluator -f sg.edu.nus.comp.nlp.ims.feature.CAllWordsFeatureExtractorCombination
+
+java -mx1000m -cp ".\lib\liblinear-1.33-with-deps.jar;.\lib\jwnl.jar;.\lib\commons-logging.jar;.\lib\jdom.jar;.\lib\trove.jar;.\lib\maxent-2.4.0.jar;.\lib\opennlp-tools-1.3.0.jar;.\ims.jar" sg.edu.nus.comp.nlp.ims.implement.CTester -ptm .\lib\tag.bin.gz -tagdict .\lib\tagdict.txt -ssm .\lib\EnglishSD.bin.gz -prop .\lib\prop.xml -c sg.edu.nus.comp.nlp.ims.corpus.CAllWordsCoarseTaskCorpus -r sg.edu.nus.comp.nlp.ims.io.CAllWordsResultWriter -is .\lib\sense_clusters-21.senses .\corpora\english-all-words\test\eng-all-words.test.xml .\model\ .\model\ .\corpora\english-all-words\test\result\ -e sg.edu.nus.comp.nlp.ims.classifiers.CLibLinearEvaluator -f sg.edu.nus.comp.nlp.ims.feature.CAllWordsFeatureExtractorCombination
+
