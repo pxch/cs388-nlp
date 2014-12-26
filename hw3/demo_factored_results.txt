@@ -1,0 +1,7 @@
+Testing on treebank done [314.2 sec].
+pcfg LP/LR summary evalb: LP: 66.47 LR: 71.02 F1: 68.67 Exact: 10.97 N: 1904
+dep DA summary evalb: LP: 72.19 LR: 72.19 F1: 72.19 Exact: 11.82 N: 1877
+factor LP/LR summary evalb: LP: 67.67 LR: 73.34 F1: 70.39 Exact: 13.65 N: 1904
+factor Tag summary evalb: LP: 91.72 LR: 91.72 F1: 91.72 Exact: 23.0 N: 1904
+factF1  factDA  factEx  pcfgF1  depDA   factTA  num
+70.40           13.66   68.68   72.19   91.73   1904

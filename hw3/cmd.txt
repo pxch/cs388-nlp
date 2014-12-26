@@ -1,0 +1,30 @@
+java -cp "stanford-parser.jar:" -server -mx1500m edu.stanford.nlp.parser.lexparser.LexicalizedParser -evals "tsv" -goodPCFG -train /projects/nlp/penn-treebank3/parsed/mrg/wsj/ 200-270 -testTreebank /projects/nlp/penn-treebank3/parsed/mrg/wsj/ 2000-2100 > labeled_output.txt
+
+
+Familiarize:
+
+java -cp "stanford-parser-full-2014-01-04/stanford-parser.jar;" -server -mx1024m edu.stanford.nlp.parser.lexparser.LexicalizedParser -evals "tsv" -goodPCFG -train wsj/ 200-270 -testTreebank wsj/ 2000-2100 > labeled_output.txt
+
+java -cp "stanford-parser-full-2014-01-04/stanford-parser.jar;" -server -mx1024m edu.stanford.nlp.parser.lexparser.LexicalizedParser -evals "tsv" -goodFactored -maxLength 40 -train wsj/ 200-270 -testTreebank wsj/ 2000-2100 > labeled_output.txt
+
+
+Preprocessing:
+
+java Preprocessing wsj ./penn_treebank3/wsj ./penn_treebank3/wsj 1.0 1000 2000 3000 4000 5000 7000 10000 13000 16000 20000 25000 30000 35000
+
+java Preprocessing wsj ./penn_treebank3/wsj ./penn_treebank3/wsj 1.0
+
+java Preprocessing brown ./penn_treebank3/brown ./penn_treebank3/brown 0.9 1000 2000 3000 4000 5000 7000 10000 13000 17000 21000
+
+java Preprocessing brown ./penn_treebank3/brown ./penn_treebank3/brown 0.9
+
+
+Exp:
+
+java -mx1000m UDA data\wsj_train_35000.mrg data\brown_train.mrg data\brown_test.mrg data\wsj_test.mrg > test_35000_full.txt
+java -mx1000m UDA data\wsj_train_30000.mrg data\brown_train.mrg data\brown_test.mrg data\wsj_test.mrg > test_30000_full.txt
+java -mx1000m UDA data\wsj_train_25000.mrg data\brown_train.mrg data\brown_test.mrg data\wsj_test.mrg > test_25000_full.txt
+
+java -mx1000m UDA data\wsj_train_3000.mrg data\brown_train.mrg data\brown_test.mrg data\wsj_test.mrg > test_35000_full.txt
+java -mx1000m UDA data\wsj_train_2000.mrg data\brown_train.mrg data\brown_test.mrg data\wsj_test.mrg > test_2000_full.txt
+java -mx1000m UDA data\wsj_train_1000.mrg data\brown_train.mrg data\brown_test.mrg data\wsj_test.mrg > test_1000_full.txt

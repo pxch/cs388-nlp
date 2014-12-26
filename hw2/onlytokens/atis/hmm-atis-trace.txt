@@ -1,0 +1,1397 @@
+F:\UT\Course\CS 388 Natural Language Processing\HW2>java -cp "mallet-2.0.7/class
+;mallet-2.0.7/lib/mallet-deps.jar" cc.mallet.fst.HMMSimpleTagger --train true --
+model-file model_file --training-proportion 0.8 --test lab atis/atis3_mallet.pos
+
+Number of features in training data: 412
+Number of predicates: 412
+Labels: O VB DT NNS IN NNP TO WDT VBP VBZ NN PRP VBG VBN CD MD RB CC JJ WRB RP P
+DT WP EX UH POS JJS VBD RBS SYM RBR JJR NNPS
+Preparing O
+State #0 "O"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing VB
+State #1 "VB"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing DT
+State #2 "DT"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing NNS
+State #3 "NNS"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing IN
+State #4 "IN"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing NNP
+State #5 "NNP"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing TO
+State #6 "TO"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing WDT
+State #7 "WDT"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing VBP
+State #8 "VBP"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing VBZ
+State #9 "VBZ"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing NN
+State #10 "NN"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing PRP
+State #11 "PRP"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing VBG
+State #12 "VBG"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing VBN
+State #13 "VBN"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing CD
+State #14 "CD"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing MD
+State #15 "MD"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing RB
+State #16 "RB"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing CC
+State #17 "CC"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing JJ
+State #18 "JJ"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing WRB
+State #19 "WRB"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing RP
+State #20 "RP"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing PDT
+State #21 "PDT"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing WP
+State #22 "WP"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing EX
+State #23 "EX"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing UH
+State #24 "UH"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing POS
+State #25 "POS"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing JJS
+State #26 "JJS"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing VBD
+State #27 "VBD"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing RBS
+State #28 "RBS"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing SYM
+State #29 "SYM"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing RBR
+State #30 "RBR"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing JJR
+State #31 "JJR"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Preparing NNPS
+State #32 "NNPS"
+initialWeight=0.0, finalWeight=0.0
+#destinations=33
+-> O
+-> VB
+-> DT
+-> NNS
+-> IN
+-> NNP
+-> TO
+-> WDT
+-> VBP
+-> VBZ
+-> NN
+-> PRP
+-> VBG
+-> VBN
+-> CD
+-> MD
+-> RB
+-> CC
+-> JJ
+-> WRB
+-> RP
+-> PDT
+-> WP
+-> EX
+-> UH
+-> POS
+-> JJS
+-> VBD
+-> RBS
+-> SYM
+-> RBR
+-> JJR
+-> NNPS
+Training on 462 instances
+Testing on 115 instances
+getValue() (observed log-likelihood) = -33282.80559512357
+getValue() (log-likelihood) = -33282.80559512357
+HMM finished one iteration of maximizer, i=0
+getValue() (observed log-likelihood) = -17542.17610364077
+getValue() (log-likelihood) = -17542.17610364077
+HMM finished one iteration of maximizer, i=1
+getValue() (observed log-likelihood) = -17545.585914980715
+getValue() (log-likelihood) = -17545.585914980715
+HMM finished one iteration of maximizer, i=2
+getValue() (observed log-likelihood) = -17547.64810548649
+getValue() (log-likelihood) = -17547.64810548649
+HMM finished one iteration of maximizer, i=3
+getValue() (observed log-likelihood) = -17548.95820798148
+getValue() (log-likelihood) = -17548.95820798148
+HMM finished one iteration of maximizer, i=4
+getValue() (observed log-likelihood) = -17549.82282804999
+getValue() (log-likelihood) = -17549.82282804999
+HMM finished one iteration of maximizer, i=5
+getValue() (observed log-likelihood) = -17550.41342622414
+getValue() (log-likelihood) = -17550.41342622414
+HMM finished one iteration of maximizer, i=6
+getValue() (observed log-likelihood) = -17550.829975983397
+getValue() (log-likelihood) = -17550.829975983397
+HMM finished one iteration of maximizer, i=7
+getValue() (observed log-likelihood) = -17551.132530179657
+getValue() (log-likelihood) = -17551.132530179657
+HMM finished one iteration of maximizer, i=8
+getValue() (observed log-likelihood) = -17551.358168570554
+getValue() (log-likelihood) = -17551.358168570554
+HMM finished one iteration of maximizer, i=9
+getValue() (observed log-likelihood) = -17551.530415863675
+getValue() (log-likelihood) = -17551.530415863675
+HMM finished one iteration of maximizer, i=10
+getValue() (observed log-likelihood) = -17551.664601799504
+getValue() (log-likelihood) = -17551.664601799504
+HMM finished one iteration of maximizer, i=11
+getValue() (observed log-likelihood) = -17551.770981033318
+getValue() (log-likelihood) = -17551.770981033318
+HMM finished one iteration of maximizer, i=12
+getValue() (observed log-likelihood) = -17551.856589649877
+getValue() (log-likelihood) = -17551.856589649877
+HMM finished one iteration of maximizer, i=13
+getValue() (observed log-likelihood) = -17551.926373955368
+getValue() (log-likelihood) = -17551.926373955368
+HMM finished one iteration of maximizer, i=14
+getValue() (observed log-likelihood) = -17551.983891412863
+getValue() (log-likelihood) = -17551.983891412863
+HMM finished one iteration of maximizer, i=15
+getValue() (observed log-likelihood) = -17552.03175506927
+getValue() (log-likelihood) = -17552.03175506927
+HMM finished one iteration of maximizer, i=16
+getValue() (observed log-likelihood) = -17552.071921286413
+getValue() (log-likelihood) = -17552.071921286413
+HMM finished one iteration of maximizer, i=17
+getValue() (observed log-likelihood) = -17552.10587996923
+getValue() (log-likelihood) = -17552.10587996923
+HMM finished one iteration of maximizer, i=18
+getValue() (observed log-likelihood) = -17552.134782991532
+getValue() (log-likelihood) = -17552.134782991532
+HMM finished one iteration of maximizer, i=19
+getValue() (observed log-likelihood) = -17552.15953270613
+getValue() (log-likelihood) = -17552.15953270613
+HMM finished one iteration of maximizer, i=20
+getValue() (observed log-likelihood) = -17552.18084417826
+getValue() (log-likelihood) = -17552.18084417826
+HMM finished one iteration of maximizer, i=21
+getValue() (observed log-likelihood) = -17552.19928978369
+getValue() (log-likelihood) = -17552.19928978369
+HMM finished one iteration of maximizer, i=22
+getValue() (observed log-likelihood) = -17552.215331741336
+getValue() (log-likelihood) = -17552.215331741336
+HMM finished one iteration of maximizer, i=23
+getValue() (observed log-likelihood) = -17552.229346234155
+getValue() (log-likelihood) = -17552.229346234155
+HMM finished one iteration of maximizer, i=24
+getValue() (observed log-likelihood) = -17552.24164155859
+getValue() (log-likelihood) = -17552.24164155859
+HMM finished one iteration of maximizer, i=25
+getValue() (observed log-likelihood) = -17552.25247196132
+getValue() (log-likelihood) = -17552.25247196132
+HMM finished one iteration of maximizer, i=26
+getValue() (observed log-likelihood) = -17552.262048312095
+getValue() (log-likelihood) = -17552.262048312095
+HMM finished one iteration of maximizer, i=27
+getValue() (observed log-likelihood) = -17552.270546421998
+getValue() (log-likelihood) = -17552.270546421998
+HMM finished one iteration of maximizer, i=28
+getValue() (observed log-likelihood) = -17552.278113585693
+getValue() (log-likelihood) = -17552.278113585693
+HMM finished one iteration of maximizer, i=29
+getValue() (observed log-likelihood) = -17552.28487376887
+getValue() (log-likelihood) = -17552.28487376887
+HMM finished one iteration of maximizer, i=30
+getValue() (observed log-likelihood) = -17552.29093175147
+getValue() (log-likelihood) = -17552.29093175147
+HMM finished one iteration of maximizer, i=31
+getValue() (observed log-likelihood) = -17552.296376458264
+getValue() (log-likelihood) = -17552.296376458264
+HMM finished one iteration of maximizer, i=32
+getValue() (observed log-likelihood) = -17552.301283652032
+getValue() (log-likelihood) = -17552.301283652032
+HMM finished one iteration of maximizer, i=33
+getValue() (observed log-likelihood) = -17552.30571812309
+getValue() (log-likelihood) = -17552.30571812309
+HMM finished one iteration of maximizer, i=34
+getValue() (observed log-likelihood) = -17552.309735477967
+getValue() (log-likelihood) = -17552.309735477967
+HMM finished one iteration of maximizer, i=35
+getValue() (observed log-likelihood) = -17552.313383607543
+getValue() (log-likelihood) = -17552.313383607543
+HMM finished one iteration of maximizer, i=36
+getValue() (observed log-likelihood) = -17552.316703896988
+getValue() (log-likelihood) = -17552.316703896988
+HMM finished one iteration of maximizer, i=37
+getValue() (observed log-likelihood) = -17552.319732227163
+getValue() (log-likelihood) = -17552.319732227163
+HMM finished one iteration of maximizer, i=38
+getValue() (observed log-likelihood) = -17552.32249980613
+getValue() (log-likelihood) = -17552.32249980613
+HMM finished one iteration of maximizer, i=39
+getValue() (observed log-likelihood) = -17552.32503386258
+getValue() (log-likelihood) = -17552.32503386258
+HMM finished one iteration of maximizer, i=40
+getValue() (observed log-likelihood) = -17552.32735822563
+getValue() (log-likelihood) = -17552.32735822563
+HMM finished one iteration of maximizer, i=41
+getValue() (observed log-likelihood) = -17552.329493811496
+getValue() (log-likelihood) = -17552.329493811496
+HMM finished one iteration of maximizer, i=42
+getValue() (observed log-likelihood) = -17552.331459032906
+getValue() (log-likelihood) = -17552.331459032906
+HMM finished one iteration of maximizer, i=43
+getValue() (observed log-likelihood) = -17552.333270145053
+getValue() (log-likelihood) = -17552.333270145053
+HMM finished one iteration of maximizer, i=44
+getValue() (observed log-likelihood) = -17552.334941538254
+getValue() (log-likelihood) = -17552.334941538254
+HMM finished one iteration of maximizer, i=45
+getValue() (observed log-likelihood) = -17552.336485986627
+getValue() (log-likelihood) = -17552.336485986627
+HMM finished one iteration of maximizer, i=46
+getValue() (observed log-likelihood) = -17552.33791485947
+getValue() (log-likelihood) = -17552.33791485947
+HMM finished one iteration of maximizer, i=47
+getValue() (observed log-likelihood) = -17552.33923830224
+getValue() (log-likelihood) = -17552.33923830224
+HMM finished one iteration of maximizer, i=48
+getValue() (observed log-likelihood) = -17552.340465390876
+getValue() (log-likelihood) = -17552.340465390876
+HMM finished one iteration of maximizer, i=49
+getValue() (observed log-likelihood) = -17552.341604264457
+getValue() (log-likelihood) = -17552.341604264457
+HMM finished one iteration of maximizer, i=50
+getValue() (observed log-likelihood) = -17552.34266223939
+getValue() (log-likelihood) = -17552.34266223939
+HMM finished one iteration of maximizer, i=51
+getValue() (observed log-likelihood) = -17552.343645907524
+getValue() (log-likelihood) = -17552.343645907524
+HMM finished one iteration of maximizer, i=52
+HMM training has converged, i=52
+Evaluator iteration=53 cost=NA (not Optimizable.ByValue)
+Training accuracy=0.8904775521875894
+Testing accuracy=0.8644859813084113
+Trainer by likelihood done
+
+Running time: 5425 milliseconds
